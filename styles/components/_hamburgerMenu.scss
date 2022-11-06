@@ -1,0 +1,44 @@
+@use '../globals/' as g;
+@use '../utils/' as u;
+
+.navigation {
+    padding-top: u.rem(25);
+    padding-bottom: u.rem(25);
+
+    #navToggler {
+        border: none;
+    }
+
+    .hamburger-menu {
+        text-align: center;
+        margin-left: u.rem(22);
+        margin-right: u.rem(22);
+
+        button {
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                @include u.button-hover;
+            }
+        }
+
+        &.open {
+            button {
+                background-color: g.$button-yellow;
+                border: u.rem(1) solid g.$button-yellow;
+
+                &:hover {
+                    @include u.button-hover;
+                }
+            }
+        }
+
+        .nav-links {
+            @include u.breakpoint-up(desktop) {
+                &>*:not(:last-child) {
+                    margin-right: u.rem(50);
+                }
+            }
+        }
+    }
+}

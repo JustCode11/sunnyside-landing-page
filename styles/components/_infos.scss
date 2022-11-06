@@ -1,0 +1,97 @@
+@use '../globals/' as g;
+@use '../utils/' as u;
+
+.infos {
+    text-align: center;
+
+    &__row {
+
+        &__img-col {
+            @include u.breakpoint-down(desktop) {
+                height: u.rem(312);
+            }
+        }
+
+        &__text-col {
+            height: u.rem(440);
+
+            &>*:not(:last-child) {
+                margin-bottom: u.rem(20);
+            }
+
+            .infos-link {
+                font-family: g.$headingFont;
+                text-transform: uppercase;
+                font-weight: 900;
+                position: relative;
+
+                &::before {
+                    @include u.link-decoration;
+                    background-color: rgba(250, 212, 0, 30%);
+                    transition: background-color 200ms ease-in-out;
+                }
+
+                &:hover {
+                    &::before {
+                        background-color: rgba(250, 212, 0, 80%);
+                    }
+                }
+            }
+        }
+
+        &__last-col {
+            height: u.rem(600);
+
+            img {
+                object-fit: cover;
+            }
+
+            .last-text {
+                bottom: 10%;
+
+                &>*:not(:last-child) {
+                    margin-bottom: u.rem(20);
+                }
+
+                &.text-color-green {
+                    h2 {
+                        font-size: u.rem(30);
+                        color: g.$dark-desaturated-cyan;
+                    }
+
+                    p {
+                        color: g.$dark-desaturated-cyan;
+                    }
+                }
+
+                &.text-color-blue {
+                    h2 {
+                        font-size: u.rem(30);
+                        color: g.$dark-blue;
+                    }
+
+                    p {
+                        color: g.$dark-blue;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            .infos__row__text-col {
+
+                .infos-link {
+                    &::before {
+                        background-color: rgba(254, 120, 103, 30%);
+                    }
+
+                    &:hover {
+                        &::before {
+                            background-color: rgba(254, 120, 103, 80%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

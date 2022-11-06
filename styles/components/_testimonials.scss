@@ -1,0 +1,49 @@
+@use '../globals/' as g;
+@use '../utils/' as u;
+
+.testimonials {
+    padding-top: u.rem(65);
+    padding-bottom: u.rem(65);
+
+    h2 {
+        font-size: u.rem(16);
+        letter-spacing: u.rem(5);
+        color: g.$grayish-blue;
+        text-transform: uppercase;
+        margin-bottom: u.rem(65);
+    }
+
+    &__profiles {
+        &>*:not(:last-child) {
+            margin-bottom: u.rem(65);
+        }
+
+        &__profile {
+            &>*:not(:last-child) {
+                margin-bottom: u.rem(35);
+            }
+
+            .t-img {
+                img {
+                    width: u.rem(73);
+                    height: u.rem(73);
+                }
+            }
+
+            .t-profile {
+                &__name {
+                    font-family: g.$headingFont;
+                    font-size: u.rem(18);
+                    font-weight: 900;
+                    color: g.$very-dark-desaturated-blue;
+                    margin-bottom: u.rem(10);
+                }
+
+                &__job {
+                    color: g.$grayish-blue;
+                    font-size: u.rem(14);
+                }
+            }
+        }
+    }
+}

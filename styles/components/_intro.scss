@@ -1,0 +1,31 @@
+@use '../globals/' as g;
+@use '../utils/' as u;
+
+.intro {
+    background-image: url('../../images/mobile/image-header.jpg');
+    height: u.rem(465);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    letter-spacing: u.rem(5);
+
+    @include u.breakpoint-up(desktop) {
+        background-image: url('../../images/desktop/image-header.jpg');
+    }
+
+    &__content {
+        position: relative;
+        top: 12%;
+
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: u.rem(70);
+        }
+
+        .arrow-icon {
+            width: u.rem(35);
+            cursor: pointer;
+        }
+    }
+}

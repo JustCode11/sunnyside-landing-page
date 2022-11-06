@@ -1,0 +1,21 @@
+@use './functions' as f;
+@use '../globals/' as g;
+
+@mixin link-decoration {
+    content: "";
+    position: absolute;
+    top: 68%;
+    bottom: 0;
+    left: calc(50% - f.rem(63));
+    right: 0;
+    width: f.rem(126);
+    height: f.rem(8);
+    z-index: -1;
+    border-radius: f.rem(2) / f.rem(5);
+}
+
+@mixin button-hover {
+    border: f.rem(1) solid g.$button-hover-color;
+    color: g.$bg-white;
+    background-color: g.$button-hover-color;
+}

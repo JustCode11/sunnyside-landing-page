@@ -1,0 +1,23 @@
+{
+  "name": "sunnyside-agency-landing-page-main",
+  "version": "1.0.0",
+  "description": "Frontend Challenge from Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch styles:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Sass"
+  ],
+  "author": "JustCode11",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.2.2"
+  }
+}

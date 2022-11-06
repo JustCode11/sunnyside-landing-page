@@ -1,0 +1,17 @@
+@use '../globals/' as g;
+@use '../utils/' as u;
+
+.gallery {
+    .gallery-item {
+        cursor: pointer;
+        overflow: hidden;
+
+        img {
+            transition: transform 500ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
