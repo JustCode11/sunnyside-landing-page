@@ -23,11 +23,13 @@ Users should be able to:
 
 ### Preview
 
-![Sunnyside Landing Page Desktop](./preview/SunnysideDesktop.gif);
+Desktop Preview
+
+![Sunnyside Landing Page Desktop](./preview/SunnysideDesktop.gif)
 
 Mobile Preview
 
-![Sunnyside Landing Page Mobile](./preview/SunnysideMobile.gif);
+![Sunnyside Landing Page Mobile](./preview/SunnysideMobile.gif)
 
 ### Links
 

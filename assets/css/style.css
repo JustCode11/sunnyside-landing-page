@@ -10932,33 +10932,6 @@ a:hover {
   }
 }
 
-.intro {
-  background-image: url("../../images/mobile/image-header.jpg");
-  height: 29.0625rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  letter-spacing: 0.3125rem;
-}
-@media (min-width: 62em) {
-  .intro {
-    background-image: url("../../images/desktop/image-header.jpg");
-  }
-}
-.intro__content {
-  position: relative;
-  top: 12%;
-}
-.intro__content h1 {
-  text-transform: uppercase;
-  margin-bottom: 4.375rem;
-}
-.intro__content .arrow-icon {
-  width: 2.1875rem;
-  cursor: pointer;
-}
-
 .infos {
   text-align: center;
 }
